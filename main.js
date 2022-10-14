@@ -1,23 +1,37 @@
-// import { evaluate } from './node_modules/mathjs'
-
+const pantalla = document.getElementById('pantalla')
+const contenedorTeclas = document.querySelector('#contenedor-teclas')
 let texto = ''
 
-const pantalla = document.getElementById('pantalla')
 
-document.querySelector('#contenedor-teclas').addEventListener('click', (evento) => {
+contenedorTeclas.addEventListener('click', (evento) => {
   /* obtener el valor de la tecla precionada */
   let teclaPrecionada = evento.target.textContent
-  /* concadenar y mostrar las nuevas teclas precionadas en al pantalla */
-  texto = texto + teclaPrecionada
-  pantalla.textContent = texto
+
+  //comprobar el tipo de tecla
+  if (evento.target.textContent == '=') {
+    calcularResultado(texto)
+
+  } else if (evento.target.textContent == 'C') {
+    texto = ''
+    mostrarEnPantalla('0')
+
+  } else {
+    /* agregar la nueva tecla a la pantalla */
+    texto = texto + teclaPrecionada
+    pantalla.textContent = texto
+
+    mostrarEnPantalla(texto)
+  }
 })
 
-calcularResultado()
-
+// calcular resultado////////////////////
 function calcularResultado(string) {
-  // let = '30+20-2'
+  let resultado = math.evaluate(string)
 
-  console.log('vaca');
-  // console.log(evaluate('12+25'));
+  mostrarEnPantalla(resultado)
+}
 
+//mostrar resultado en pantalla /////////
+function mostrarEnPantalla(contenido) {
+  pantalla.textContent = contenido
 }
