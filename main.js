@@ -27,6 +27,7 @@ contenedorTeclas.addEventListener('click', (evento) => {
 // calcular resultado////////////////////
 function calcularResultado(string) {
   let resultado = math.evaluate(string)
+  texto = resultado
 
   mostrarEnPantalla(resultado)
 }
