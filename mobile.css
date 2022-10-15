@@ -1,5 +1,5 @@
 :root {
-  --color0: rgb(0, 0, 0);
+  --color0: rgb(0, 0, 0); /* letra de la pantalla */
   --color1: #1d3557; /* contenedor(calculadora) */
   --color2: #e63946; /* header and footer */
   --color3: #457b9d; /* botones */
@@ -44,7 +44,7 @@ main {
   margin-top: 2rem;
 }
 .contenedor {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   background-color: #ddd;
   width: 90%;
   min-width: 250px;
@@ -65,7 +65,7 @@ main {
   height: 4rem;
 }
 .pantalla {
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
   background-color: white;
   width: 100%;
   min-width: 100%;
@@ -80,7 +80,7 @@ main {
 }
 
 .contenedor-teclas {
-  background-color: coral;
+  /* background-color: coral; */
   display: flex;
   flex-wrap: wrap;
 }
@@ -96,13 +96,13 @@ main {
   /* flex-wrap: wrap; */
 }
 .contenedor-subteclas div:nth-child(1) {
-  background-color: darkgoldenrod;
+  /* background-color: darkgoldenrod; */
   width: 75%;
   display: flex;
   flex-wrap: wrap;
 }
 .contenedor-subteclas div:nth-child(2) {
-  background-color: rgb(196, 118, 199);
+  /* background-color: rgb(196, 118, 199); */
   width: 25%;
 }
 .contenedor-subteclas div:nth-child(1) button {
@@ -148,7 +148,7 @@ footer {
   --color2: rgb(69, 69, 69); /* header and footer */
   --color3: rgb(96, 96, 96); /* botones */
   --color4: rgb(105, 105, 105); /* pantalla */
-  --color5: rgb(125, 125, 125); /* body */
+  --color5: rgb(143, 143, 143); /* body */
   --color-paleta: #f1faee;
   /* transition: 1s; */
 }
