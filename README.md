@@ -6,6 +6,6 @@ proyecto de prueba
 
 https://jaenfigueroa.github.io/Calculadora/
 
-## 🔗 Screenshots
+## 🔗 Vista previa
 
 ![App Screenshot](./assets/captura.png)
