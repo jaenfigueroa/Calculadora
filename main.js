@@ -36,3 +36,10 @@ function calcularResultado(string) {
 function mostrarEnPantalla(contenido) {
   pantalla.textContent = contenido
 }
+
+//ALTERNA TEMA CLARO/OSCURO //////////////////////
+const paleta = document.querySelector('#paleta')
+
+paleta.addEventListener('click', () => {
+  document.body.classList.toggle('tema-oscuro')
+})

@@ -1,8 +1,13 @@
 :root {
-  /* COLORES */
-  --primary-color: #333;
-  --secundary-color: #ccc;
+  --color0: rgb(0, 0, 0);
+  --color1: #1d3557; /* contenedor(calculadora) */
+  --color2: #e63946; /* header and footer */
+  --color3: #457b9d; /* botones */
+  --color4: #a8dadc; /* pantalla */
+  --color5: #f1faee; /* body */
+  --color-paleta: rgb(88, 88, 88);
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -108,4 +113,42 @@ main {
   /* background-color: rgb(74, 159, 190); */
   width: 100%;
   height: 100%;
+}
+
+/* APLICANDO TEMA/////////////////////////// */
+body {
+  background-color: var(--color5);
+}
+header,
+footer {
+  background-color: var(--color2);
+  color: white;
+}
+.pantalla {
+  background-color: var(--color4);
+  color: var(--color0);
+}
+.contenedor {
+  background-color: var(--color1);
+}
+.contenedor button {
+  background-color: var(--color3);
+  color: white;
+}
+#paleta {
+  background-color: var(--color-paleta);
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+/* COLORES MODO OSCURO */
+.tema-oscuro {
+  --color0: white;
+  --color1: rgb(56, 56, 56); /* contenedor(calculadora) */
+  --color2: rgb(69, 69, 69); /* header and footer */
+  --color3: rgb(96, 96, 96); /* botones */
+  --color4: rgb(105, 105, 105); /* pantalla */
+  --color5: rgb(125, 125, 125); /* body */
+  --color-paleta: #f1faee;
+  /* transition: 1s; */
 }
