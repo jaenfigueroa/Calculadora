@@ -2,7 +2,7 @@
 
 proyecto de prueba
 
-## 🔗 Resultado (pagina web)
+## 🔗 Resultado (sitio web)
 
 https://jaenfigueroa.github.io/Calculadora/
 
